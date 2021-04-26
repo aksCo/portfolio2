@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Portfolio Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--A Nav Bar with Name and Contact, Portfolio, About Me to the right-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-brand mb-1 h1 mx-auto text-center">Aks Sreenivasan</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+        <!--div containing toggable navigation-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!--navigation menu-->
+            <ul class="nav navbar-nav ml-auto text-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio2.html">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <h2>PORTFOLIO</h2>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('General Links')">General Links</button>
+        <button class="btn" onclick="filterSelection('Projects')">Projects</button>
+        <!-- <button class="btn" onclick="filterSelection('GitHub')"> GitHub</button> -->
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column General Links">
+            <div class="content">
+                <h4>Links to Check Out: </h4>
+                <div id="link" class="link"><a href="assets/wordfile/CV_5.0.pdf" target="_blank"> CV </a></div>
+                <br>
+                <div id="link" class="link"><a href="https://www.linkedin.com/in/aks-sreenivasan/" target="_blank">LinkedIn</a></div>
+                <br>
+                <div id="link" class="link"><a href="https://github.com/aksCo" target="_blank">GitHub</a></div>
+            </div>
+        </div>
+
+        <div class="column Projects">
+            <div class="content">
+                <h4>Cocktails and Cuisines</h4>
+                <img src="assets/images/CC pic.png" alt="Screenshot of Cocktails and Cuisine Application" style="width:70%">
+                <p> <br>Search for different recipes by name. Features HTML, CSS, Accordians, JavaScript including jQuery, Foundation framework, and APIs from MealDB and DrinksDB</p>
+                <div id="link" class="link"><a href="https://luuluu75.github.io//Cocktails-Cuisines/" target="_blank">Cocktails and Cuisines</a></div>
+            </div>
+        </div>
+        <div class="column Projects">
+            <div class="content">
+                <h4>Password Generator</h4>
+                <img src="assets/images/PasswordGen.png" alt="Screenshot of Password Generator" style="width:70%">
+                <p><br> Generate a random password. Features HTML, CSS, JavaScript including jQuery, moment.js</p>
+                <br><br>
+                <div id="link" class="link"><a href="https://aksco.github.io/passwordgenerator/" target="_blank">Random Password Generator</a></div>
+            </div>
+        </div>
+        <div class="column Projects">
+            <div class="content">
+                <h4>Coding Quiz</h4>
+                <img src="assets/images/codingquiz.png" alt="Screenshot of Coding Quiz Generator" style="width:70%">
+                <p><br> Generate a timed quiz on JavaScript fundamentals and stores high scores. Features HTML, CSS, JavaScript including jQuery, moment.js</p>
+                <br>
+                <div id="link" class="link"> <a href="https://aksco.github.io/codingquizcreator/" target="_blank">Coding Quiz Generator</a></div>
+            </div>
+        </div>
+        <div class="column Projects">
+            <div class="content">
+                <h4>Workday Scheduler</h4>
+                <img src="assets/images/workday.png" alt="Screenshot of Workday Scheduler" style="width:70%">
+                <p><br>Schedule tasks for standard business hours. Features HTML, CSS and JavaScript including moment.js</p>
+                <br>
+                <div id="link" class="link"><a href="https://aksco.github.io/workdayscheduler/" target="_blank">Workday Scheduler</a></div>
+            </div>
+        </div>
+        <div class="column Projects">
+            <div class="content">
+                <h4>Weather Dashboard</h4>
+                <img src="assets/images/weather.png" alt="Screenshot of Weather Dashboard" style="width:70%">
+                <p><br>Schedule tasks for standard business hours. Features HTML, CSS, JavaScript including moment.js and APIs from OpenWeather</p>
+                <br>
+                <div id="link" class="link"><a href="https://aksco.github.io/weather-dashboard/" target="_blank">Weather Dashboard</a></div>
+            </div>
+        </div>
+
+        <div class="column Projects">
+            <div class="content">
+                <h4>Fitness Tracker</h4>
+                <img src="assets/images/fitness.png" alt="Screenshot of Fitness Tracker" style="width:70%">
+                <p><br>Fitness Tracker built with starter code provided by Trinity Educational Services. Features JavaScript including Node js, mySql and the use of html and api routes</p>
+                <br>
+                <div id="link" class="link"><a href="https://shielded-caverns-44461.herokuapp.com/?id=606d3b0921821100153b933a" target="_blank">Fitness Tracker</a></div>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer class="page-footer font-small blue fixed-bottom"> -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright Aks</div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="script.js"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
